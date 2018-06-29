@@ -1,0 +1,192 @@
+<html>
+
+    <body>
+    	<!-- All of your content -->
+    	<div class="popup">Hey guy, here's your pop up!</div>
+    </body>
+
+.popup {
+	display: none;
+ 
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+    .popup.visible {
+    	display: block;
+    }
+    var button = document.querySelector('.yourButton');
+    button.addEventListener('click', showPopup);
+     
+    var showPopup = function() {
+    	var popup = document.querySelector('.popup');
+    	popup.classList.add('visible');
+    }
+    var closeButton = document.querySelector('.popup .closeButton');
+    closeButton.addEventListener('click', hidePopup);
+     
+    var hidePopup = function() {
+    	var popup = document.querySelector('.popup');
+    	popup.classList.remove('visible');
+    }
+ 
+  <title>First website</title>
+  
+   <body>
+    
+    <h1>This is still a motherfucking website.
+And it's more fucking perfect than the last guy's.
+Seriously, it takes minimal fucking effort to improve this shit.
+
+7 fucking declarations.
+
+That's how much CSS it took to turn that grotesque pile of shit into this easy-to-read masterpiece. It's so fucking simple and it still has all the glory of the original perfect-ass website:
+
+    Shit's still lightweight and loads fast
+    Still fits on all your shitty screens
+    Still looks the same in all your shitty browsers
+    The motherfucker's still accessible to every asshole that visits your site
+    Shit's still legible and gets your fucking point across
+
+And guess what, motherfucker:
+
+You never knew it, but it's easy to improve readability on your site. Here's how.
+Let it breathe
+
+Look at lines 1 and 2 of some shitty website you're building. Assuming they're not married they probably shouldn't be humping. The defaults are trash -- pick a minimum line-height: 1.4 for body copy. Headings should be tighter. If you can't see that...piss off.
+
+If your text hits the side of the browser, fuck off forever. You ever see a book like that? Yes? What a shitty book.
+A little less contrast
+
+Black on white? How often do you see that kind of contrast in real life? Tone it down a bit, asshole. I would've even made this site's background a nice #EEEEEE if I wasn't so focused on keeping declarations to a lean 7 fucking lines.
+Size Matters
+
+I know your partner says otherwise, but it's true. Bump that body copy to render close to 16px or more. Smaller type works well for print, not the screen.
+Line-width, motherfucker
+
+Looking at an LCD screen is strainful enough. Don't make me read a line of text that's 200 fucking characters long. Keep it to a nice 60-80 and users might actually read more than one sentence of your worthless dribble.
+Yes, this is also fucking satire, you fuck
+
+I love what the creator of this site's inspiration did. What I'm saying is that it's so, so simple to make sites easier to read. Websites are broken by default, they are functional, high-performing, and accessible, but they're also fucking ugly. You and all the other web designers out there need to make them not total shit.
+
+    "You're a fucking moron if you use default browser styles."
+    - Eleanor Roosevelt
+
+Epilogue
+
+Inspired by the geniuses behind motherfuckingwebsite.com and txti.
+
+This page—that isn't a total fucking eyesore—was created by me with help from him. </h1>
+  
+  </body>
+  
+      <style>
+            body {
+              background-color:green;
+              color:#fff;
+              text-align:center;
+            }
+      </style>
+  
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+</style>
+</head>
+<body style="text-align:center">
+
+<h2>Popup</h2>
+
+<div class="popup" onclick="myFunction()">Click me to toggle the popup!
+  <span class="popuptext" id="myPopup">A Simple Popup!</span>
+</div>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
+<script language="javascript"><!--
+
+function PopUp() {
+
+	var TheURL = "http://www.thehackingproject.org";
+	var PopWidth = "400";
+	var PopHeight = "400";
+	var PosTop = "100";
+	var PosLeft = "100";
+
+	var SettingS = "toolbar=no,menubar=no,scrollbars=no,resizable=yes,width=" + PopWidth + ",height=" + PopHeight + ",top=" + PosTop + ",left=" + PosLeft;
+	var PopUp = open(TheURL,"box",SettingS);
+}
+
+window.onload=PopUp;
+
+// -->
+</script>
+
